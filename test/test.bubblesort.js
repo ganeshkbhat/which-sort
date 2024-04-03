@@ -17,7 +17,10 @@
 'use strict';
 
 const { expect } = require('chai');
+const sinon = require('sinon');
 
+// Import the function to be tested
+const bucketSort = require('../index');
 
 describe('[ tests] Tests to ', () => {
   let tst, written;
@@ -41,11 +44,6 @@ describe('[ tests] Tests to ', () => {
 
 });
 
-// const { expect } = require('chai');
-// const sinon = require('sinon');
-
-// // Import the function to be tested
-// const bucketSort = require('./bucketSort');
 
 // describe('Bucket Sort', () => {
 //     // Test cases for array lengths from 10 to 10000

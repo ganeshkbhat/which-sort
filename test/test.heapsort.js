@@ -17,6 +17,11 @@
 'use strict';
 
 const { expect } = require('chai');
+const sinon = require('sinon');
+
+const assert = require('chai').assert;
+const { heapSort } = require('../index'); // Assuming your heapSort function is in a separate file
+
 
 
 describe('[ tests] Tests to ', () => {
@@ -41,8 +46,6 @@ describe('[ tests] Tests to ', () => {
 
 });
 
-// const assert = require('chai').assert;
-// const { heapSort } = require('./heapSort'); // Assuming your heapSort function is in a separate file
 
 // describe('Heap Sort', function() {
 //     // Test for array lengths from 10 to 10000

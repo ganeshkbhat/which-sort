@@ -54,10 +54,10 @@ function bucketSort(nums, bucketCount = 10) {
     return sortedNums;
 }
 
-// Example usage:
-const nums = [29, 25, 3, 49, 9, 37, 21, 43, 17];
-const sortedNums = bucketSort(nums);
-console.log(sortedNums); // Output: [3, 9, 17, 21, 25, 29, 37, 43, 49]
+// // Example usage:
+// const nums = [29, 25, 3, 49, 9, 37, 21, 43, 17];
+// const sortedNums = bucketSort(nums);
+// console.log(sortedNums); // Output: [3, 9, 17, 21, 25, 29, 37, 43, 49]
 
 function radixSort(nums) {
     const max_value = Math.max(...nums);
@@ -88,9 +88,9 @@ function radixSort(nums) {
     return negatives.concat(positives);
 }
 
-// Example usage:
-const sortedArray = radixSort([170, 45, 75, 90, 802, 24, 2, 66]);
-console.log(sortedArray);
+// // Example usage:
+// const sortedArray = radixSort([170, 45, 75, 90, 802, 24, 2, 66]);
+// console.log(sortedArray);
 
 // Heapify function to heapify a subtree rooted at index i in arr[] of size n
 function heapify(arr, n, i) {
@@ -138,11 +138,11 @@ function heapSort(arr) {
     return arr;
 }
 
-// Example usage:
-const arrays = [12, 11, 13, 5, 6, 7];
-console.log("Original Array:", arrays);
-const sortedArrays = heapSort(array);
-console.log("Sorted Array:", sortedArrays);
+// // Example usage:
+// const arrays = [12, 11, 13, 5, 6, 7];
+// console.log("Original Array:", arrays);
+// const sortedArrays = heapSort(array);
+// console.log("Sorted Array:", sortedArrays);
 
 function mergeSort(arr) {
     if (arr.length <= 1) {
@@ -174,10 +174,10 @@ function merge(left, right) {
     return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
 
-// Example usage:
-const unsortedArray = [5, 3, 9, 1, 4, 6, 8, 2, 7];
-const sorteArray = mergeSort(unsortedArray);
-console.log(sorteArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// // Example usage:
+// const unsortedArray = [5, 3, 9, 1, 4, 6, 8, 2, 7];
+// const sorteArray = mergeSort(unsortedArray);
+// console.log(sorteArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 function quickSort(arr) {
     if (arr.length <= 1) {
@@ -202,11 +202,11 @@ function quickSort(arr) {
     return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
-// Example usage:
-const array = [5, 3, 7, 2, 8, 4, 1, 9, 6];
-console.log("Original array:", array);
-const sortedArrayss = quickSort(array);
-console.log("Sorted array:", sortedArrayss);
+// // Example usage:
+// const array = [5, 3, 7, 2, 8, 4, 1, 9, 6];
+// console.log("Original array:", array);
+// const sortedArrayss = quickSort(array);
+// console.log("Sorted array:", sortedArrayss);
 
 
 if (!isBrowser()) {

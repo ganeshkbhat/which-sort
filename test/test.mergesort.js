@@ -17,6 +17,9 @@
 'use strict';
 
 const { expect } = require('chai');
+const sinon = require('sinon');
+
+const { mergeSort } = require('../index'); // Assuming your merge sort implementation is in a separate file
 
 
 describe('[ tests] Tests to ', () => {
@@ -41,8 +44,6 @@ describe('[ tests] Tests to ', () => {
 
 });
 
-// const { expect } = require('chai');
-// const { mergeSort } = require('./mergeSortImplementation'); // Assuming your merge sort implementation is in a separate file
 
 // describe('Merge Sort', function() {
 //     // Test cases for input array lengths from 10 to 10000

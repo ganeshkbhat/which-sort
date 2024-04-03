@@ -17,6 +17,8 @@
 'use strict';
 
 const { expect } = require('chai');
+const sinon = require('sinon');
+const { radixSort } = require('../index'); // Import your radixSort function
 
 
 describe('[ tests] Tests to ', () => {
@@ -41,8 +43,6 @@ describe('[ tests] Tests to ', () => {
 
 });
 
-// const { expect } = require('chai');
-// const { radixSort } = require('./yourRadixSortImplementation'); // Import your radixSort function
 
 // describe('Radix Sort', () => {
 //     // Test sorting for arrays of different lengths

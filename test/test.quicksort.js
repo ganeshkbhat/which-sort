@@ -17,6 +17,9 @@
 'use strict';
 
 const { expect } = require('chai');
+const sinon = require('sinon');
+
+const { quickSort } = require('../index'); // Assuming quickSort function is exported from quicksort.js
 
 
 describe('[ tests] Tests to ', () => {
@@ -41,8 +44,6 @@ describe('[ tests] Tests to ', () => {
 
 });
 
-// const { expect } = require('chai');
-// const { quickSort } = require('./quicksort'); // Assuming quickSort function is exported from quicksort.js
 
 // describe('Quicksort', () => {
 //     it('should correctly sort arrays of various lengths', () => {
